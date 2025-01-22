@@ -114,7 +114,7 @@ library(TraitMoments)
 
 ## Explore example data
 
-TraitMoments comes with two example data frames that can be loaded with ‘data(trait_moments_data)’. The data frame 'communities' contains the relative abundances for 93 species from nine communities and 'traits' provides information on five traits for the corresponding species. For some species, no information is available for certain traits, so the data frame 'traits' contains some NAs. Since both data frames are quite large, we just inspect the heads in this example:
+TraitMoments comes with two example data frames that can be loaded with ‘data(trait_moments_data)’. The data frame 'communities' contains the relative abundances for 55 species from nine communities and 'traits' provides information on five traits for the corresponding species. For some species, no information is available for certain traits, so the data frame 'traits' contains some NAs. Since both data frames are quite large, we just inspect the heads in this example:
 
 ```{r, message=FALSE}
 data(trait_moments_data)
@@ -170,7 +170,7 @@ my_moment_plot +
  ggtitle("Distribution of trait 1 for three communities") +
  xlab("Trait 1") +
  scale_color_manual(values = c("black", "red", "orange")) +
- coord_cartesian(xlim = c(0,1), ylim = c(0,12), expand = FALSE)
+ coord_cartesian(xlim = c(0,1), ylim = c(0,4), expand = FALSE)
 
 ```
 
@@ -189,7 +189,7 @@ First, we can state that the shape of the distributions is very distinct across 
 
 Skewness is a measure of the asymmetry of a distribution. Community 1 is strongly skewed to the right (positive skew), while community 5 is slightly skewed to the left (negative skew) and community 9 is almost symmetric (skew close to zero). Applying the terminology of Le Bagousse-Pinguet et al. (2021) to the three distributions, we could conclude that community 1 is characterised by a high functional rarity, as there are many rare species with infrequent trait values compared to the dominant species. In contrast, community 9 would be characterised by a very low functional rarity, as there are no rare species with uncommon trait values. 
 
-Furthermore the three distributions strongly differ with regard to the fourth moment, the kurtosis which is a characterization of a distributions “tailedness” or "peakedness". Community 1 is quite peaked around a value of approximately 0.2, but also has a tail that extends far to the right. Although the distribution for community 5 looks less peaked at first glance, it has the highest kurtosis, as its tails are less pronounced than those of community 1. The distribution for community 9 has the least marked peak and short tails, i.e. a low kurtosis, which in the sense of Le Bagousse-Pinguet et al. (2021) would be indicative for a high functional evenness.  
+Furthermore the three distributions strongly differ with regard to the fourth moment, the kurtosis which is a characterization of a distributions “tailedness” or "peakedness". Community 1 and 5 are characterised by a unimodal distribution with a relatively accentuated peak. The distribution for Community 9 is relatively flat overall without a pronounced peak, i.e. a low kurtosis, which in the sense of Le Bagousse-Pinguet et al. (2021) would be indicative for a high functional evenness.  
 
 
 ## Special note on community-weighted means (CWMs)
