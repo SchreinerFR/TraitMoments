@@ -150,7 +150,7 @@ Conversely, the two arguments can also be used to apply stricter quality criteri
 
 We can use the function 'visualise_moments' to obtain a visualisation of trait distributions for selected traits and communities based on density estimation from calculated moments. As an example we will plot the distributions for trait 1 in the communities 1, 5 and 9. For this purpose, we have to provide 'visualise_moments' a result of a trait moment calculation as returned by 'trait_moments', and specify the corresponding trait and the communities.
 
-```{r, message=FALSE, warning=FALSE, fig.align = 'center', fig.height = 4, fig.width=8, , fig.cap = "Figure 2: Distributions for trait 1 in the communities 1, 5 and 9 as density estimation based on calculated moments."}
+```{r, message=FALSE, warning=FALSE, fig.align = 'center', fig.height = 4, fig.width=6.5, , fig.cap = "Figure 2: Distributions for trait 1 in the communities 1, 5 and 9 as density estimation based on calculated moments."}
 
 my_moment_plot <- visualise_moments(result = result1, 
                                     traitID = "Trait.1", 
@@ -162,7 +162,7 @@ my_moment_plot
 
 Since the plot returned by 'visualise_moments' is based on 'ggplot2' we can use ggplot syntax to customize the plot.
 
-```{r, message=FALSE, warning=FALSE, fig.align = 'center', fig.height = 4, fig.width=8, , fig.cap = "Figure 3: Distributions for trait 1 in the communities 1, 5 and 9 as density estimation based on calculated moments with customised plot aesthetics."}
+```{r, message=FALSE, warning=FALSE, fig.align = 'center', fig.height = 4, fig.width=6.5, , fig.cap = "Figure 3: Distributions for trait 1 in the communities 1, 5 and 9 as density estimation based on calculated moments with customised plot aesthetics."}
 
 library(ggplot2)
 
