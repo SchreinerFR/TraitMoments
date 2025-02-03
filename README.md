@@ -1,5 +1,5 @@
 
-# TraitMoments
+# TraitMoments <img src='README_files\figure-gfm\Icon.png' align="right" height="139" alt="logo" style="float:right; height:200px;" />
 
 Efficient calculation and visualization of trait distribution moments.
 
